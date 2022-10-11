@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       <div>
-        <h1 className=' font-thin text-2xl italic font-serif'>TB</h1>
+        <h1 className=' font-thin text-2xl italic font-serif'>Jeffrey Luu</h1>
       </div>
       {/* menu */}
       <ul className='hidden md:flex gap-x-8'>
@@ -31,8 +31,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to='work' smooth={true} duration={500}>
-            Work
+          <Link to='works' smooth={true} duration={500}>
+            Works
           </Link>
         </li>
         <li>
