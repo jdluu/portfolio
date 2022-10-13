@@ -33,7 +33,6 @@ const Home = () => {
           <HiArrowNarrowRight size={25} className="ml-3" />
         </span> 
         </a>
-        
         </div>
       </div>
       <div>
