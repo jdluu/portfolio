@@ -18,16 +18,11 @@ const Navbar = () => {
       <div>
         <h1 className=' font-thin text-2xl italic font-serif'>Jeffrey Luu</h1>
       </div>
-      {/* menu */}
+      {/* Top navigation bar menu */}
       <ul className='hidden md:flex gap-x-8'>
         <li>
           <Link to='home' smooth={true} duration={500}>
             Home
-          </Link>
-        </li>
-        <li>
-          <Link to='about' smooth={true} duration={500}>
-            About
           </Link>
         </li>
         <li>
@@ -60,14 +55,8 @@ const Navbar = () => {
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-            Work
+          <Link onClick={handleClick} to='works' smooth={true} duration={500}>
+            Works
           </Link>
         </li>
         <li className='py-6 text-4xl'>
