@@ -1,7 +1,6 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import me from '../assets/me.png';
-import { Link } from "react-scroll"; 
 
 export const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -20,20 +19,21 @@ const Home = () => {
           Hi I'm Jeffrey Luu, a Developer and Designer.
         </h2>
         <p className="text-gray-500 py-4 max-w-md">
-           I have experience in mobile devleopment, web development, and computer graphics.
+           Interested in mobile development, web development, and computer graphics.
         </p>
         <div>
-          <Link
-            to="about"
-            smooth
-            duration={500}
-            className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-          >
-            Resume
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight size={25} className="ml-3" />
-            </span>
-          </Link>
+        <a 
+          href="https://drive.google.com/file/d/1eXwe5AGbLlQ61-fzjME4_vMcAU8m390R/view?usp=sharing" 
+          target="_blank"
+          rel="noreferrer" 
+          className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+        >
+        Resume
+        <span className="group-hover:rotate-90 duration-300">
+          <HiArrowNarrowRight size={25} className="ml-3" />
+        </span> 
+        </a>
+        
         </div>
       </div>
       <div>
