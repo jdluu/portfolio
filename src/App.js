@@ -1,7 +1,7 @@
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Works from "./components/Works";
+import Work from "./components/Work";
 
 const isMobileDevice = ({
   query: "(min-device-width: 480px)",
@@ -30,7 +30,7 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      <Works />
+      <Work />
       <Contact />
     </div>
   );
