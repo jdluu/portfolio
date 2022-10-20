@@ -40,7 +40,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='gap-x-8 text-xl'>
-          <button onClick={() => toggleTheme()}>{theme}</button>
           <button onClick = {toggleTheme} >
              {theme === 'dark-theme' ? <BsSun /> : <BsMoon />}
           </button>
