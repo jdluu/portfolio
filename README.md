@@ -6,8 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Install Node and npm [here](https://nodejs.org/en/download/)
 
 ## Running
-1. Run the command `npm install` to install all dependencies
+1. Run the command `npm install` to install all dependencies.
 2. `cd` into `src` and run the command `npm start` to run the app locally.
+
+## Updating Github Pages
+1. Run the command `npm run deploy`.
 
 
 
