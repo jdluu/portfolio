@@ -1,7 +1,10 @@
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Work from "./components/Work";
+import React, {useContext} from 'react';
+import "./App.css";
+import Contact from "./components/Contact/Contact";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
+import Work from "./components/Work/Work";
+import { ThemeContext } from "./Theme";
 
 const isMobileDevice = ({
   query: "(min-device-width: 480px)",
@@ -26,8 +29,11 @@ const isBigScreenDevice = ({
 
 
 function App() { 
+  
+  const { theme} = useContext(ThemeContext);
+
   return (
-    <div>
+    <div class = {`App ${theme}`}>
       <Navbar />
       <Home />
       <Work />

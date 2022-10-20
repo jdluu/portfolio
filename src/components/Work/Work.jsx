@@ -1,6 +1,7 @@
 import React from 'react';
-import code from '../assets/code2.png';
-import ub from "../assets/ub.png";
+
+import code from '../../assets/code.png';
+import ub from '../../assets/ub.png';
 
 const Works = () => {
   return (

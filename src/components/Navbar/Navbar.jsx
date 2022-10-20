@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState, useContext } from 'react'; 
 import {
   FaBars,
   FaTimes,
@@ -9,23 +9,13 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { BsSun, BsMoon} from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import { ThemeContext } from '../../Theme';
 
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const [theme, setTheme] = useState('light');
-  
-  const toggleTheme = () => {
-      if (theme === 'light') {
-          setTheme('dark');
-          document.documentElement.setAttribute('data-theme', 'dark');
-      } 
-      else {
-          setTheme('light');
-          document.documentElement.setAttribute('data-theme', 'light');
-      }
-  };
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
@@ -50,9 +40,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='gap-x-8 text-xl'>
-          <button onClick={toggleTheme} className='flex items-center gap-x-2'>
-            {theme === 'light' ? <BsSun /> : <BsMoon />}
-            {theme === 'light' ? 'Dark' : 'Light'}
+          <button onClick={() => toggleTheme()}>{theme}</button>
+          <button onClick = {toggleTheme} >
+             {theme === 'dark-theme' ? <BsSun /> : <BsMoon />}
           </button>
         </li>
       </ul>

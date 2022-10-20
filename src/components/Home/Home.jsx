@@ -1,6 +1,6 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import me from '../assets/me.png';
+import fractal from '../../assets/fractal.png';
 
 export const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -37,7 +37,7 @@ const Home = () => {
       </div>
       <div>
         <img
-          src={me}  
+          src={fractal}  
           alt="my profile"
           className="rounded-2xl mx-auto w-2/3 md:w-full"
         />
