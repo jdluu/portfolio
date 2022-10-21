@@ -2,18 +2,13 @@ import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import fractal from '../../assets/fractal.png';
 
-export const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-    if (newWindow) newWindow.opener = null;
-};
-
 const Home = () => {
   return (
     <div
     name="home"
     className="h-screen w-full bg-[#0a192f]"
   >
-    <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+    <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-left h-full px-4 md:flex-row">
       <div className="flex flex-col justify-center h-full">
         <h2 className="text-4xl sm:text-7xl font-bold text-white">
           Hi I'm Jeffrey Luu, a Developer and Designer.
