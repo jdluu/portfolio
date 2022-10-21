@@ -5,8 +5,9 @@ import {
   FaGithub,
   FaLinkedin,
 } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import {
+  IoNewspaperOutline,
+} from 'react-icons/io5';
 import { BsSun, BsMoon} from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import { ThemeContext } from '../../Theme';
@@ -82,6 +83,8 @@ const Navbar = () => {
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='https://www.linkedin.com/in/jeffrey-luu/'
+              target = '_blank'
+              rel = 'noreferrer'
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -90,24 +93,20 @@ const Navbar = () => {
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='https://github.com/jdluu'
+              target = '_blank'
+              rel = 'noreferrer'
             >
               Github <FaGithub size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='/mailto:jluuruncs@gmail.com'
-            >
-              Email <HiOutlineMail size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
             <a
               className='flex justify-between items-center w-full text-gray-300'
               href='https://drive.google.com/file/d/1eXwe5AGbLlQ61-fzjME4_vMcAU8m390R/view?usp=sharing'
+              target = '_blank'
+              rel = 'noreferrer'
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              Resume <IoNewspaperOutline size={30} />
             </a>
           </li>
         </ul>
