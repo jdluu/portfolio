@@ -1,0 +1,80 @@
+.ContactBox {
+    width: full;
+    height: screen;
+    background-color: #0a192f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.ContactParentColumn {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: full;
+}
+
+.ContactChildColumn {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: full;
+    height: screen;
+    align-items: center;
+}
+
+.ContactHeader {
+    font-size: 2.25rem;
+    font-weight: 700;
+    display: inline;
+    border-bottom: 4px solid #22d3ee;
+    color: #d1d5db;
+}
+
+
+.ContactDescription {
+    color: #e2e8f0;
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+}
+
+.NameInput{
+    background-color: #ccd6f6;
+    padding: 0.5rem;
+}
+
+.EmailInput {
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    background-color: #ccd6f6;
+    padding: 0.5rem;
+}
+
+.MessageInput {
+    background-color: #ccd6f6;
+    padding: 8px;
+}
+
+.SendButton {
+    color: #fff;
+    background-color: #2b6cb0;
+    border-color: #2b6cb0;
+    border-width: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;    
+}
+
+.SendButton:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}

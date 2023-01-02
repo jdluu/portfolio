@@ -1,49 +1,32 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import fractal from '../../assets/fractal.png';
-
-export const openInNewTab = (url) => {
-    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-    if (newWindow) newWindow.opener = null;
-};
+import './Home.css';
 
 const Home = () => {
   return (
-    <div
-    name="home"
-    className="h-screen w-full bg-[#0a192f]"
-  >
-    <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-      <div className="flex flex-col justify-center h-full">
-        <h2 className="text-4xl sm:text-7xl font-bold text-white">
-          Hi I'm Jeffrey Luu, a Developer and Designer.
-        </h2>
-        <p className="text-gray-500 py-4 max-w-md">
-           Interested in mobile development, web development, and computer graphics.
-        </p>
-        <div>
-        <a 
-          href="https://drive.google.com/file/d/1eXwe5AGbLlQ61-fzjME4_vMcAU8m390R/view?usp=sharing" 
-          target="_blank"
-          rel="noreferrer" 
-          className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-        >
-        Resume
-        <span className="group-hover:rotate-90 duration-300">
-          <HiArrowNarrowRight size={25} className="ml-3" />
-        </span> 
-        </a>
+    <div class = "HomeDescriptionContainer" >
+      <div class = "HomeDescriptionRowContainer">
+        <div class = "HomeDescriptionColumnContainer">
+          <h class = "SelfDescription">I'm Jeffrey Luu, Developer and Designer.</h>
+          <p class = "ParagraphDescription">Interested in mobile development, web development, and computer graphics.</p>
+          <div class = "ResumeBox">
+            <a class = "ResumeButton" 
+               href = "https://drive.google.com/file/d/1eXwe5AGbLlQ61-fzjME4_vMcAU8m390R/view?usp=sharing" 
+               target = "_blank" 
+               rel = "noreferrer">
+                Download Resume
+            <span class = "ResumeArrow">
+              <HiArrowNarrowRight size = {25} class = "hi1" />
+            </span>
+            </a>
+          </div>
+        </div>
+        <div class = "ImageBox">
+          <img class = "MandelbrotImg" src = {fractal} alt = "my profile" />
         </div>
       </div>
-      <div>
-        <img
-          src={fractal}  
-          alt="my profile"
-          className="rounded-2xl mx-auto w-2/3 md:w-full"
-        />
-      </div>
     </div>
-  </div>
   );
 };
 export default Home;

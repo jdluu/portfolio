@@ -1,5 +1,6 @@
 import React, { useEffect, createContext, useState } from "react";
 
+// Define a React Hook that defines the context of an object which stores data without passing data
 const ThemeContext = createContext();
 
 const getTheme = () => {
