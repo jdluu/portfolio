@@ -1,5 +1,4 @@
 import React from 'react';
-import { ThemeContext } from '../../Theme';
 import './Contact.css';
 import '../../App.css';
 
