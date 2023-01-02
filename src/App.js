@@ -6,25 +6,25 @@ import Navbar from "./components/Navbar/Navbar";
 import Work from "./components/Work/Work";
 import { ThemeContext } from "./Theme";
 
-const isMobileDevice = ({
-  query: "(min-device-width: 480px)",
-});
+// const isMobileDevice = ({
+//   query: "(min-device-width: 480px)",
+// });
 
-const isTabletDevice = ({
-  query: "(min-device-width: 768px)",
-});
+// const isTabletDevice = ({
+//   query: "(min-device-width: 768px)",
+// });
 
-const isLaptopDevice = ({
-  query: "(min-device-width: 1024px)",
-});
+// const isLaptopDevice = ({
+//   query: "(min-device-width: 1024px)",
+// });
 
-const isDesktopDevice = ({
-  query: "(min-device-width: 1200px)",
-});
+// const isDesktopDevice = ({
+//   query: "(min-device-width: 1200px)",
+// });
 
-const isBigScreenDevice = ({
-  query: "(min-device-width: 1201px)",
-});
+// const isBigScreenDevice = ({
+//   query: "(min-device-width: 1201px)",
+// });
 
 
 

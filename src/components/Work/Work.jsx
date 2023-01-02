@@ -51,7 +51,7 @@ const Works = () => {
                       </div>
                   </div>
                 </div>
-                <div class = "BackgroundContainer" style={{ backgroundImage: `url(${code})` }}>
+                <div class = "BackgroundContainer" style={{ backgroundImage: `url(${ub})` }}>
                   <div class = "ProjectContainer">
                       <span class = "ProjectTitle">
                         UrBenefit
