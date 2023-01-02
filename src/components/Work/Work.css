@@ -1,0 +1,121 @@
+
+.WorkContainer {
+    /* <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'> */
+    width: full;
+    height: 100%;
+    background-color: #0a192f;
+    color: #d1d5db;
+}
+
+.WorkContainer2 {
+    /* <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'> */
+    max-width: 1000px;
+    margin: auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.WorkContainerHeading {
+    /* <div className='pb-8 w-full flex justify-center items-center flex-col'> */
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.WorkHeading {
+    /* <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'> */
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline;
+    border-bottom: 4px solid #22d3ee;
+    color: #d1d5db;
+}
+
+.WorkDescription {
+    /* <p className='py-6 text-2xl'>Check out some of my most recent work</p> */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.GridContainer {
+    /* <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'> */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.BackgroundContainer {
+    /* style={{ backgroundImage: `url(${code})` }}
+              className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div' */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 2px #040c16;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectContainer {
+    /* <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'> */
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ProjectContainer:hover {
+    opacity: 1;
+}
+
+.ProjectTitle {
+    /* <span className=' text-lg font-bold text-white tracking-wider'> */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+}
+
+.HoverDescription {
+    /* <p className='text-center'>An Android application for planning a trip to the San Diego Zoo, made with Java.</p> */
+    text-align: center;
+}
+
+.HoverDescription2 {
+    /* <p className='text-center'>An Android application for planning a trip to the San Diego Zoo, made with Java.</p> */
+    text-align: center;
+}
+
+.LinkContainer {
+    /* <div className='pt-8 text-center'> */
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.LearnMoreButton {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: white;
+    color: #666;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
