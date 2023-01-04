@@ -11,7 +11,7 @@ import {
 import { BsSun, BsMoon} from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import { ThemeContext } from '../../Theme';
-
+import './Navbar.css';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -19,12 +19,12 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
-        <h1 className=' font-thin text-2xl italic font-serif'>Jeffrey Luu</h1>
+    <div class = "div1">
+      <div class = "div2">
+        <h1 class = "h1">Jeffrey Luu</h1>
       </div>
       {/* Top navigation bar menu */}
-      <ul className='hidden md:flex gap-x-8'>
+      <ul class = "ul1">
         <li>
           <Link to='home' smooth={true} duration={500}>
             Home
@@ -40,48 +40,45 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-        <li className='gap-x-8 text-xl'>
+        <li class = "liButton">
           <button onClick = {toggleTheme} >
-             {theme === 'dark-theme' ? <BsSun /> : <BsMoon />}
+              {theme === 'dark-theme' ? <BsSun /> : <BsMoon />}
           </button>
         </li>
       </ul>
-      {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      {/* Hamburger Menu */}
+      <div onClick={handleClick} class = 'hMenu'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
       {/* Mobile menu */}
-      <ul
-        className={
-          !nav
-            ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
-        }
-      >
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+      <ul class = "ulMobile"> 
+        <li class = "liMobile">
+          <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+        <li class = "liMobile">
+          <Link to='work' smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          {' '}
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+        <li class = "liMobile">
+          <Link to='contact' smooth={true} duration={500}>
             Contact
           </Link>
         </li>
+        <li class = "liButtonMobile">
+          <button onClick = {toggleTheme} >
+              {theme === 'dark-theme' ? <BsSun /> : <BsMoon />}
+          </button>
+        </li>
       </ul>
       {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
+      <div class = "div3">
+        <ul class = "ul2">
+          <li class = "li2">
+          <a
+              class = "MenuContent"
               href='https://www.linkedin.com/in/jeffrey-luu/'
               target = '_blank'
               rel = 'noreferrer'
@@ -89,9 +86,9 @@ const Navbar = () => {
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
+          <li class = "li3">
+          <a
+              class = 'MenuContent'
               href='https://github.com/jdluu'
               target = '_blank'
               rel = 'noreferrer'
@@ -99,9 +96,9 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-            <a
-              className='flex justify-between items-center w-full text-gray-300'
+          <li class = "li4">
+          <a
+              class = 'MenuContent'
               href='https://drive.google.com/file/d/1eXwe5AGbLlQ61-fzjME4_vMcAU8m390R/view?usp=sharing'
               target = '_blank'
               rel = 'noreferrer'
